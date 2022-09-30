@@ -24,8 +24,10 @@
     picked on Monday of this week.
 
     The prices are per pound and are written
-    in cents. 
+    in dollars. 
 */
+
+
 
 const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
 const galaAcres = [5, 2, 4, 3, 6, 2, 4]
@@ -34,7 +36,6 @@ const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
 const fujiPrice = .89 
 const galaPrice = .64
 const pinkPrice = .55
-
 
 
 // PROBLEM 1
@@ -51,8 +52,20 @@ const pinkPrice = .55
 
 // CODE HERE
 
+let eachDayAcres = []
+
+for (let i = 0; i <= 6; i++) {
+    eachDayAcres.push(fujiAcres[i] + galaAcres[i] + pinkAcres[i])
+}
+
+// console.log(eachDayAcres)
+
+let totalAcres = eachDayAcres.reduce((a, b) => a + b, 0)
+
+console.log(totalAcres)
 
 
+// First I created an empty array stored in a variable (eachDayAcres) that would store the acreage for each day. Then I created a for loop that added the acres picked from each orchard and placed that number as an item in the eachDayAcres. Once I had an array that included each day's acres picked (eachDayAcres), I created a totalAcres variable that used the reduce method on eachDayAcres to return the sum of the items in the eachDayAcres array. The reduce method takes the previous value in the array and adds it to the next value, and so on.
 
 
 // PROBLEM 2
@@ -70,7 +83,11 @@ const pinkPrice = .55
 // CODE HERE
 
 
+let averageDailyAcres = totalAcres / 7
+console.log(averageDailyAcres)
 
+
+// I took the totalAcres variable - which equals 63 - and divided it by the number of days in a week - 7. This equates to an average of 9 acres picked a day.
 
 
 // PROBLEM 3

@@ -125,6 +125,15 @@ let days = 0
 // CODE HERE
 
 
+while (acresLeft > 0) {
+    days += 1
+    acresLeft -= averageDailyAcres
+}
+
+console.log(days)
+
+// I created a for loop that runs while acresLeft is greater than 0. Each time the loop runs the days variable increases by 1 and the acresLeft variable decreases by the averageDailyAcres (9).
+
 
 // PROBLEM 4
 
@@ -152,14 +161,27 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
+
+for (let i = 0; i < fujiAcres.length; i++) {
+    fujiTons.push(fujiAcres[i] * 6.5)
+}
+console.log(fujiTons)
+
+for (let i = 0; i < galaAcres.length; i++) {
+    galaTons.push(galaAcres[i] * 6.5)
+}
+console.log(galaTons)
+
+for (let i = 0; i < pinkAcres.length; i++) {
+    pinkTons.push(pinkAcres[i] * 6.5)
+}
+console.log(pinkTons)
 
 
-
-
-
+// I created three for loops that loops through each index of the original Acres array and multiplies it by 6.5. This number is then stored in each respective Tons array.
 
 // PROBLEM 5
 

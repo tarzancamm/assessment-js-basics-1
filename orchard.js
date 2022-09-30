@@ -67,6 +67,15 @@ console.log(totalAcres)
 
 // First I created an empty array stored in a variable (eachDayAcres) that would store the acreage for each day. Then I created a for loop that added the acres picked from each orchard and placed that number as an item in the eachDayAcres. Once I had an array that included each day's acres picked (eachDayAcres), I created a totalAcres variable that used the reduce method on eachDayAcres to return the sum of the items in the eachDayAcres array. The reduce method takes the previous value in the array and adds it to the next value, and so on.
 
+// After finishing all the problems I went back and re-solved this in a simpler way as seen below. I first defined the totalAcres variable to equal 0, then used a for loop to add each item in the arrays to totalAcres with the += operator.
+
+// totalAcres = 0
+
+// for (let i = 0; i <= 6; i++) {
+//     totalAcres += (fujiAcres[i] + galaAcres[i] + pinkAcres[i])
+// }
+
+// console.log(totalAcres)
 
 // PROBLEM 2
 
@@ -212,6 +221,30 @@ console.log(galaPounds)
 console.log(pinkPounds)
 
 // I used the same .reduce method code I used in problem 1 to add each item in an array together to find the sum. After this I multiplied that number by 2000 and stored it in its respective variable.
+
+// After finishing all problems I went back and found a way to solve this with for loops as seen below. I first defined each variable to equal 0, then iterated over each item in the respective 'Tons' array, multiplied that number by 2000, and added it to each respective 'Pounds' arrays with the += operator.
+
+// let fujiPounds = 0
+// let galaPounds = 0
+// let pinkPounds = 0
+
+// for (let i = 0; i <= 6; i++) {
+//     fujiPounds += fujiTons[i] * 2000
+// }
+
+// for (let i = 0; i <= 6; i++) {
+//     galaPounds += galaTons[i] * 2000
+// }
+
+// for (let i = 0; i <= 6; i++) {
+//     pinkPounds += pinkTons[i] * 2000
+// }
+
+// console.log(fujiPounds)
+// console.log(galaPounds)
+// console.log(pinkPounds)
+
+
 
 
 // PROBLEM 6

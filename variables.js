@@ -3,15 +3,24 @@
 
 //CODE HERE 
 
+let myName = 'Cameron'
+// console.log(myName)
+
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
 //CODE HERE
 
+let faveNum = 4
+// console.log(faveNum)
+
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
 
 //CODE HERE
+
+let lovesCode = true
+// console.log(lovesCode)
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -22,9 +31,21 @@
 
 //CODE HERE
 
+if (faveNum === 13) {
+  console.log('lucky 13!')
+} else {
+  console.log('not lucky 13')
+}
+
+
 //////////////////PROBLEM 5////////////////////
 /*
   Write a for loop that prints out your faveNum 5 times.
 */
 
 //CODE HERE
+
+for (let i = 0; i < 5; i++) {
+  console.log(faveNum)
+}
+

@@ -22,12 +22,18 @@
 */
 const planning = "This is the first step, in which the end goal of the software is determined and defined. Developers typically will see what systems are already in place, and determine what features will need to be added." 
 
-let analysisOfRequirements = "This is the second step, in which you determine what will be required in order to complete your project, including tech used, personel required to complete project, etc."
+let analysisOfRequirements = "This is the second step, in which you determine what will be required in order to complete your project, including tech needed, personel required to complete project, etc."
 
-let design = "This is the third step, in which you design the application's look and functions."
+let design = "This is the third step, in which you define the application's look, UX and functions."
 
 let implimentation = "This is the fourth step, in which you write the code for your application."
 
-let testingAndIntegration = "This is the fifth step, in which you test your code and integrate your application."
+let testingAndIntegration = "This is the fifth step, in which you test your code before then deploying it."
 
 let maintain = "This is the final step, in which you periodically update your code with bug fixes, etc."
+
+// console.log(analysisOfRequirements)
+// console.log(design)
+// console.log(implimentation)
+// console.log(testingAndIntegration)
+// console.log(maintain)

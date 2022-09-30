@@ -183,6 +183,7 @@ console.log(pinkTons)
 
 // I created three for loops that loops through each index of the original Acres array and multiplies it by 6.5. This number is then stored in each respective Tons array.
 
+
 // PROBLEM 5
 
 /*
@@ -201,13 +202,16 @@ console.log(pinkTons)
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = fujiTons.reduce((a, b) => a + b, 0) * 2000
+let galaPounds = galaTons.reduce((a, b) => a + b, 0) * 2000
+let pinkPounds = pinkTons.reduce((a, b) => a + b, 0) * 2000
 
 
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
 
-
+// I used the same .reduce method code I used in problem 1 to add each item in an array together to find the sum. After this I multiplied that number by 2000 and stored it in its respective variable.
 
 
 // PROBLEM 6
@@ -228,13 +232,16 @@ console.log(pinkTons)
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
 
 
+console.log(fujiProfit)
+console.log(galaProfit)
+console.log(pinkProfit)
 
-
+// I took the pounds of apples picked and multiplied it by each respective price per pound. This gave me the total dollar amount of sales we'll receive from each orchard.
 
 
 // PROBLEM 7
@@ -248,3 +255,11 @@ console.log(pinkTons)
 */
 
 // CODE HERE
+
+
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+
+console.log(totalProfit)
+
+
+// I created a variable - totalProfit - that adds each respective orchard's profits together to find the sum.
